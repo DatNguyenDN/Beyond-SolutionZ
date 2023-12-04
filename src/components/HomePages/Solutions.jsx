@@ -19,19 +19,19 @@ export const Solutions = () => {
             
             "
             >
-                <div className="text-white">
-                    <div className="flex text-2xl mt-[50px] w-full justify-center items-center md:text-[4.2rem]   ">
+                <div className="text-white ">
+                    <div className="flex text-2xl mt-[5px] w-full justify-center items-center md:text-[4.2rem]   ">
                         <h1>WHY ARE CHOOSE US?</h1>
                     </div>
     
-                    <div className="hidden md:hidden lg:flex flex-row justify-evenly space-x-[70vh]  ">
+                    <div className="hidden md:hidden lg:flex flex-row justify-evenly space-x-[1000px]  ">
                         <div
                             id="solution__left"
-                            className="flex flex-col justify-between space-y-[200px] p-[5%]"
+                            className="flex flex-col items-center justify-between space-y-[200px] h-[300px] p-[10px]"
                         >
                             <div
                                 id="solution__left_top"
-                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] max-h-[185px"
+                                className=" flex flex-col gap-[2rem] p- text-xl max-w-[300px] h-[185px]"
                             >
                                 <h1>EXCELLENT USER EXPERIENCE</h1>
                                 <h2>
@@ -41,7 +41,7 @@ export const Solutions = () => {
                             </div>
                             <div
                                 id="solution__left_bottom"
-                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] max-h-[185px"
+                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] h-[185px]"
                             >
                                 <h1>RETINA STANDARD DISPLAY</h1>
                                 <h2>
@@ -53,11 +53,11 @@ export const Solutions = () => {
     
                         <div
                             id="solution__right"
-                            className="flex flex-col justify-between space-y-[200px] p-[5%]"
+                            className="flex flex-col items-center justify-between space-y-[200px] h-[300px] p-[10px]"
                         >
                             <div
                                 id="solution__right_top"
-                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] max-h-[185px"
+                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] h-[185px]"
                             >
                                 <h1>COMPREHENSIVE SOLUTIONS</h1>
                                 <h2>
@@ -67,7 +67,7 @@ export const Solutions = () => {
                             </div>
                             <div
                                 id="solution__right_bottom"
-                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] max-h-[185px"
+                                className="  flex flex-col gap-[2rem] text-xl max-w-[300px] h-[185px]"
                             >
                                 <h1>SUPER FLEXIBLE</h1>
                                 <h2>

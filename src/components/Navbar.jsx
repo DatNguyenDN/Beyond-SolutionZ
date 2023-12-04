@@ -10,6 +10,7 @@ const Navbar = () => {
     return (
         <nav
             className="
+            z-50
             w-full 
             h-9% 
             flex px-7 py-6 justify-between items-center bg-navBackground fixed top-0 left-0  navbar "

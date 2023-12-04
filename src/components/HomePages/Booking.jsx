@@ -104,7 +104,7 @@ export const Booking = () => {
                 </div>
             </div>
 
-            <div id="home__booking_right" className="flex flex-col w-[30%] max-lg:w-full max-lg:items-center max-sm::items-center max-md::items-center ">
+            <div id="home__booking_right" className="flex flex-col w-[30%] max-lg:w-full max-lg:items-center max-sm::items-center max-md:items-center ">
                 <div className="text-white max-sm:text-center">
                     <p className="text-lg">
                         <i className="bg-emerald-500 w-[16px] h-[16px] inline-block" />
@@ -112,7 +112,7 @@ export const Booking = () => {
                     </p>
                     <h1 className="text-2xl">Get Free Business Appointment</h1>
                 </div>
-                <div id="home__booking__form" className=" flex">
+                <div id="home__booking__form" className=" flex max-sm:w-[100%]">
                     <BookingForm />
                 </div>
             </div>
