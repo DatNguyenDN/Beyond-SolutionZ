@@ -6,14 +6,22 @@ import { close, menu } from "../assets/MenuButton/";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth', // You can change this to 'auto' for an instant scroll
+        });
+      };
+
 
     return (
         <nav
             className="
+            
             z-50
             w-full 
             h-9% 
-            flex px-7 py-6 justify-between items-center bg-navBackground fixed top-0 left-0  navbar "
+            flex px-7 py-6 justify-between items-center bg-navBackground fixed top-0 left-0  navbar"
         >
             <img
                 className="nav__logo w-[180px] h-[36px] "
@@ -28,7 +36,7 @@ const Navbar = () => {
                         className={`font-poppins  font-normal cursor-pointer text-[16px] hover:text-green-500  relative p-1 navlink
                         ${link.id === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                     >
-                        <NavLink to={`/${link.id}`}>{link.title}</NavLink>
+                        <NavLink to={`/${link.id}`} onClick={scrollToTop}>{link.title}</NavLink>
                     </li>
                 ))}
             </ul>

@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="block items-center  justify-center bg-[#37393f] p-[3%]   ">
       <div
         id="footer__top"
-        className="flex items-center justify-between gap-10 pb-10 text-white max-lg:flex-col max-sm:text-sm"
+        className="flex items-center justify-between gap-10 pb-10 text-white max-lg:flex-col max-sm:mr-12 max-sm:text-sm"
       >
         <div>
           <img
@@ -82,7 +82,7 @@ const Footer = () => {
 
       <div
         id="footer__middle"
-        className="flex flex-row justify-between py-12  "
+        className="flex flex-row justify-between border-t-2 border-indigo-300 py-12   "
       >
         <div className=" hidden flex-col  text-white md:block">
           <p className="text-md text-cyan-600">
@@ -128,7 +128,7 @@ const Footer = () => {
 
       <div
         id="footer__bottom"
-        className="flex items-center justify-between gap-5 pt-10 text-white max-sm:flex-col"
+        className="flex items-center justify-between gap-5 border-t-2 border-indigo-300 pt-10 text-white max-sm:flex-col"
       >
         <div>
           <h2 className="max-sm:pl-5">
