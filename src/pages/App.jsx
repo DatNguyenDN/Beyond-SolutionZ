@@ -5,9 +5,9 @@ const App = () => {
   return (
     <section>
       <main className="p-[8%]">
-        <div className=" ">
+        <div className="max-sm:pt-[60px] ">
           <img
-            className="h-auto w-full object-contain animate__animated  animate__backInRight"
+            className="w-full object-contain animate__animated  animate__backInRight"
             src="https://beyondsolutionz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdata_headings.affd17ec.png&w=3840&q=75"
             alt="app_img"
           />

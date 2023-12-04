@@ -17,10 +17,10 @@ const Contact = () => {
           id="contact__text"
           className="flex  flex-col items-center justify-center gap-4 px-10 text-center "
         >
-          <h1 className="animate-fade-up text-[48px] font-semibold text-emerald-500 animate__backInLeft">
+          <h1 className="animate-fade-up text-[48px] font-semibold text-emerald-500 max-sm:text-[25px] animate__backInLeft">
             CONTACT US
           </h1>
-          <h4 className="max-w-[600px]">
+          <h4 className="max-w-[600px] max-sm:text-[13px]">
             We are here to assist you – whether it is partnership, product
             support, media inquiries, or career opportunities. Scroll down to
             connect with us.

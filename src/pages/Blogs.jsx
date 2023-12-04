@@ -5,14 +5,14 @@ import 'animate.css';
 const Blogs = () => {
   return (
     <main>
-      <div className="h-[585px] w-full pt-[100px]">
+      <div className="h-[585px] w-full pt-[100px] max-sm:h-[50%]">
         <div className="h-full w-full bg-[url(https://beyondsolutionz.com/_next/static/media/blog_banner_header.12daec78.png)] ">
           <div className="h-full w-[40%] bg-[#37393fe8] p-[5%] text-white opacity-90 max-sm:w-full ">
             <p className=" animate-fade-up text-[18px] animate-normal animate-duration-1000 max-sm:align-bottom max-sm:text-[16px]">
               <i className="inline-block h-[16px] w-[16px] bg-emerald-500" />
               &nbsp;&nbsp;&nbsp; Recent News
             </p>
-            <h1 className="text-[60px] max-sm:text-[45px] animate__animated animate__bounceInLeft">
+            <h1 className="text-[60px] max-sm:text-[40px] animate__animated animate__bounceInLeft">
               We Keep You Updated
             </h1>
           </div>

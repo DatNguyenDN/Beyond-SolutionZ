@@ -30,7 +30,8 @@ const Navbar = () => {
         />
       </Link>
 
-      <ul className=" p- hidden flex-1 space-x-11 list-none items-center justify-end lg:flex ">
+      <ul onClick={scrollToTop}
+      className=" p- hidden flex-1 space-x-11 list-none items-center justify-end lg:flex ">
         
             <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
                 <NavLink to='/'>Home</NavLink> 

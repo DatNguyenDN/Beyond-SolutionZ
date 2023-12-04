@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section id='hero' className="justify-center p-12  flex-col sm:p-16 "  >
        
-            <h1 className="justify-center text-center  text-4xl pb-3 pt-9 sm:text-[40px] font-bold animate__animated animate__backInLeft">
+            <h1 className="justify-center text-center  text-4xl pb-3 pt-9 max-sm:text-[15px] font-bold animate__animated animate__backInLeft">
                 Empowering Your App is Journey to Success
             </h1>
 
