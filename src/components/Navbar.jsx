@@ -1,76 +1,85 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/image/logo.png";
 import { navLinks } from "../constants";
 import { close, menu } from "../assets/MenuButton/";
+import DropdownComponent from "./DropDownMenu";
 
 const Navbar = () => {
-    const [toggle, setToggle] = useState(false);
-    const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth', // You can change this to 'auto' for an instant scroll
-        });
-      };
+  const [toggle, setToggle] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // You can change this to 'auto' for an instant scroll
+    });
+  };
 
+  return (
+    <nav
+      className="           
+            h-9%
+            navbar 
+            fixed 
+            left-0 top-0 z-50 flex w-full items-center justify-between bg-navBackground px-7  py-6"
+    >
+      <Link to="">
+        <img
+          className="nav__logo h-[36px] w-[180px] cursor-pointer "
+          src={logo}
+          alt="logo"
+        />
+      </Link>
 
-    return (
-        <nav
-            className="
+      <ul className=" p- hidden flex-1 space-x-11 list-none items-center justify-end lg:flex ">
+        
+            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+                <NavLink to='/'>Home</NavLink> 
+            </li>
             
-            z-50
-            w-full 
-            h-9% 
-            flex px-7 py-6 justify-between items-center bg-navBackground fixed top-0 left-0  navbar"
+            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500"><NavLink to='about'>About Us</NavLink>
+            </li>
+
+            <li className=" relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+                <DropdownComponent/>
+            </li>
+
+            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+                <NavLink to='contact'>Contact</NavLink>
+            </li>
+            
+            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+                <NavLink to='blogs'>Blogs</NavLink>
+            </li>
+      </ul>
+
+      <div className="flex flex-1 items-center justify-end lg:hidden ">
+        <img
+          className="h-[28px] w-[28px] animate-spin cursor-pointer object-contain animate-normal animate-duration-500 animate-once   "
+          src={toggle ? close : menu}
+          alt="menu"
+          onClick={() => setToggle((prev) => !prev)}
+        />
+
+        <div
+          className={`${
+            toggle ? "flex" : "hidden"
+          } absolute right-0 top-20 w-full animate-fade-right  bg-dimBlack   p-6 animate-once animate-ease-linear`}
         >
-            <img
-                className="nav__logo w-[180px] h-[36px] "
-                src={logo}
-                alt="logo"
-            />
-
-            <ul className=" list-none lg:flex hidden justify-end items-center flex-1 p- ">
-                {navLinks.map((link) => (
-                    <li
-                        key={link.id}
-                        className={`font-poppins  font-normal cursor-pointer text-[16px] hover:text-green-500  relative p-1 navlink
-                        ${link.id === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-                    >
-                        <NavLink to={`/${link.id}`} onClick={scrollToTop}>{link.title}</NavLink>
-                    </li>
-                ))}
-            </ul>
-
-            <div className="lg:hidden flex flex-1 justify-end items-center ">
-                <img
-                    className="w-[28px] h-[28px] object-contain cursor-pointer animate-spin animate-once animate-duration-500 animate-normal   "
-                    src={toggle ? close : menu}
-                    alt="menu"
-                    onClick={() => setToggle((prev) => !prev)}
-                />
-
-                <div
-                    className={`${
-                        toggle ? "flex" : "hidden"
-                    } p-6 bg-dimBlack absolute top-20 right-0  w-full   animate-fade-right animate-once animate-ease-linear`}
-                >
-                    <ul className=" list-none flex flex-col  justify-end items-center flex-1 ">
-                        {navLinks.map((link) => (
-                            <li
-                                key={link.id}
-                                className={`font-poppins  font-normal cursor-pointer text-[16px] text-white hover:text-green-500 
+          <ul className=" flex flex-1 list-none  flex-col items-center justify-end ">
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`cursor-pointer  font-poppins text-[16px] font-normal text-white hover:text-green-500 
                         ${link.id === navLinks.length - 1 ? "mr-0" : "mb-10"}`}
-                            >
-                                <NavLink to={`/${link.id}`}>
-                                    {link.title}
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
+              >
+                <NavLink to={`/${link.id}`}>{link.title}</NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

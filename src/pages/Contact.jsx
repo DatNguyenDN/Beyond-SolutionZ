@@ -17,7 +17,7 @@ const Contact = () => {
           id="contact__text"
           className="flex  flex-col items-center justify-center gap-4 px-10 text-center "
         >
-          <h1 className="animate-fade-up text-[48px] font-semibold text-emerald-500 animate-normal animate-once animate-ease-linear">
+          <h1 className="animate-fade-up text-[48px] font-semibold text-emerald-500 animate__backInLeft">
             CONTACT US
           </h1>
           <h4 className="max-w-[600px]">
@@ -31,7 +31,7 @@ const Contact = () => {
           className="mx-auto flex items-center justify-center p-[5%]"
         >
           <img
-            className="animate-fade-up animate-normal animate-once animate-ease-linear"
+            className="animate-fade-up animate-normal animate-once animate-ease-linear animate__backInUp "
             src="https://beyondsolutionz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmap_contact.81f771df.png&w=1200&q=75"
             alt="contact_image"
           />

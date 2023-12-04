@@ -14,9 +14,22 @@ export const navLinks = [
         title:'Contact',
     },
     {
-        id:'product',
-        title:'Product'
+        id:'app',
+        title:'App'
     },
+    {
+        id:'game',
+        title:'Game'
+    },
+    {
+        id:'services',
+        title:'Services'
+    },
+    {
+        id:'carrer',
+        title:'Carrer'
+    },
+
     {
         id:'blogs',
         title:'Blogs',

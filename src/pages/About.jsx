@@ -8,26 +8,26 @@ const About = () => {
           id="about__first_text"
           className="flex w-[40%]  flex-col bg-[#37393f] p-[5%] text-white max-md:w-full max-sm:w-full  "
         >
-          <p className=" animate-fade-up text-[18px] animate-normal animate-duration-1000 max-sm:text-[16px] ">
+          <p className=" text-[18px]  max-sm:text-[16px] ">
             <i className="inline-block h-[16px] w-[16px] bg-emerald-500" />
             &nbsp;&nbsp;&nbsp;About Us
           </p>
 
-          <h1 className="animate-fade-up text-[60px] animate-delay-200 animate-normal animate-duration-1000 max-md:text-[45px] max-sm:text-[32px]">
+          <h1 className="text-[55px]  animate__animated animate__backInLeft  max-md:text-[45px] max-sm:text-[32px]">
             Know About Us
           </h1>
 
-          <h2 className="animate-fade-up text-[18px]  text-[#b9b9b9] animate-normal animate-duration-1000 max-sm:text-[16px]">
+          <h2 className="text-[18px]  text-[#b9b9b9]  max-sm:text-[16px]">
             Great products are made by great people
           </h2>
         </div>
 
         <div
           id="about__first_image"
-          className="w-[60%] max-md:w-[100%] max-md:p-3"
+          className="w-[60%] max-md:w-[100%] max-md:p-3 "
         >
           <img
-            className="h-[100%] w-[100%] animate-fade-left animate-one animate-ease-linear animate-normal "
+            className="h-[100%] w-[100%]   "
             src="https://beyondsolutionz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout_headings.826f5e31.png&w=1200&q=75"
             alt="image_about"
           />
@@ -36,14 +36,14 @@ const About = () => {
 
       <div
         id="about__second"
-        className="gap-15 mt-5 flex w-full flex-row bg-[#37393f] p-[5%] max-xl:flex-col"
-      >
+        className="gap-15 mt-5 flex w-full flex-row bg-[#37393f]  max-xl:flex-col animate__backInUp pb-10"
+        >
         <div
           id="about__second__image"
-          className="w-[50%] p-[3%] max-xl:w-full max-md:w-[100%]"
+          className="w-[50%] p-[3%] max-xl:w-full max-md:w-[100%] animate__animated "
         >
           <img
-            className="h-[100%] w-[400vh] max-w-[100%] animate-fade-up rounded-md object-contain animate-delay-300 animate-normal animate-duration-1000 animate-ease-linear   "
+            className="h-[100%] w-[400vh] max-w-[100%]  rounded-md object-contain animate__animated animate__backInUp   "
             src="https://beyondsolutionz.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout_history.77c43c70.png&w=1080&q=75"
             alt="about_img"
           />
@@ -51,7 +51,7 @@ const About = () => {
 
         <div
           id="about__second__text"
-          className="grid w-[50%] animate-fade-left grid-flow-row items-center justify-center gap-4 p-[5%] animate-delay-300 animate-normal animate-duration-1000 animate-ease-linear max-xl:w-full max-xl:items-center max-xl:justify-center max-xl:pb-5 max-xl:text-center max-md:w-full"
+          className="grid w-[50%] animate-fade-left grid-flow-row items-center justify-center gap-4 p-[5%]  max-xl:w-full max-xl:items-center max-xl:justify-center max-xl:pb-5 max-xl:text-center max-md:w-full animate__animated animate__backInUp"
         >
           <h1 className="text-[48px] text-white max-xl:text-[32px]">
             ABOUT COMPANY

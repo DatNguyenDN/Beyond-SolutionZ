@@ -24,7 +24,7 @@ export const Solutions = () => {
                         <h1>WHY ARE CHOOSE US?</h1>
                     </div>
     
-                    <div className="hidden md:hidden lg:flex flex-row justify-evenly space-x-[1000px]  ">
+                    <div className="hidden md:hidden lg:flex  flex-row justify-between pt-[90px]    ">
                         <div
                             id="solution__left"
                             className="flex flex-col items-center justify-between space-y-[200px] h-[300px] p-[10px]"
@@ -41,7 +41,7 @@ export const Solutions = () => {
                             </div>
                             <div
                                 id="solution__left_bottom"
-                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] h-[185px]"
+                                className=" flex flex-col gap-[2rem] text-xl max-w-[300px] h-[185px] max-md:w-ful"
                             >
                                 <h1>RETINA STANDARD DISPLAY</h1>
                                 <h2>
