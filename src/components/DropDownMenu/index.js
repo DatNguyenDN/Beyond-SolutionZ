@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState,useRef, useEffect } from "react";
-import { DownOutlined, UpOutlined } from "@ant-design/icons";
-import { ArrowRightIcon, ChevronDownIcon, ChevronRightIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import { ArrowRightIcon, ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function DropdownComponent() {
 

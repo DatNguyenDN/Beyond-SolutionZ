@@ -68,3 +68,18 @@
 .subnavlink:hover::before {
   transform: scaleX(1);
 }
+
+.subDropDown::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: .5s ease-out;
+}
+
+.subDropDown:hover::before {
+  transform: scaleX(1);
+}

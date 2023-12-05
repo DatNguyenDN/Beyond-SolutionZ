@@ -1,7 +1,8 @@
+
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState,useRef, useEffect } from "react";
-import { DownOutlined, UpOutlined } from "@ant-design/icons";
-import { ArrowRightIcon, ChevronDownIcon, ChevronRightIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import { ArrowRightIcon, ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function DropDownSubMenu() {
 
@@ -35,12 +36,12 @@ export default function DropDownSubMenu() {
 
 
 
-        <div className="inline-flex">
-            <div className="inline-flex">
+        <div className="flex flex-col items-center  ">
+            <div className="inline-block ">
                 <button
                     type="button"
                     onClick={toggleOpen}
-                    className="inline-flex items-center justify-center h-full "
+                    className="relative inline-block  right-[-78px]   h-full "
                 >
                     Product&nbsp;
                     
@@ -55,33 +56,33 @@ export default function DropDownSubMenu() {
           <div
             ref={dropdownRef}
             id="dropmenu"
-            className="absolute top-3 right-0 z-10 w-39 mt-6  origin-top-right bg-white border border-gray-100 rounded-xl shadow-lg"
+          className="relative   origin-center top-[15px]  left-[75px] items-center  rounded-xl "
           >
-            <div className="p-2 font-poppins animate-flip-down ">
+            <div className=" font-poppins animate__flipInX animate__animated items-center justify-center  space-y-2 border-y-2 border-emerald-500">
               <a
                 href="/app"
-                className=" relative flex items-center px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-emerald-500 subnavlink"
+                className=" relative flex items-center px-4 py-2 text-base text-white  hover:text-emerald-500 subDropDown"
               >
-                <ArrowRightIcon style={{fontSize:'10px'}}/>&nbsp;&nbsp;App
+                App
               </a>
               <a
                 href="/game"
-                className="relative flex items-center px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-emerald-500 subnavlink" 
+                className="relative flex items-center px-4 py-2 text-base text-white  hover:text-emerald-500 subDropDown" 
               >
-                <ArrowRightIcon style={{fontSize:'10px'}}/>&nbsp;&nbsp;Game
+                Game
               </a>
               <a
                 href="/services"
-                className="relative flex items-center px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-emerald-500 subnavlink"
+                className="relative flex items-center px-4 py-2 text-base text-white  hover:text-emerald-500 subDropDown"
               >
-                <ArrowRightIcon style={{fontSize:'10px'}}/>&nbsp;&nbsp;Services
+                Services
               </a>
 
               <a
                 href="/career"
-                className="relative flex items-center px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-emerald-500 subnavlink"
+                className="relative flex items-center px-4 py-2 text-base text-white  hover:text-emerald-500 subDropDown"
               >
-                <ArrowRightIcon style={{fontSize:'10px'}}/>&nbsp;&nbsp;Career
+                Career
               </a>
             </div>
           </div>

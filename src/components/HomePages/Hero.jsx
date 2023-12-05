@@ -3,7 +3,7 @@ import banner from "../../assets/image/banner.png";
 import "animate.css";
 const Hero = () => {
   return (
-    <section id="hero" className="flex-col justify-center  p-[10%] sm:p-16 ">
+    <section id="hero" className="flex-col justify-center mt-4 p-[10%] sm:p-16 ">
       <div className="">
         <h1
           className="
