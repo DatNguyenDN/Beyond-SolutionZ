@@ -3,7 +3,7 @@ import React, { useState,useRef, useEffect } from "react";
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
 import { ArrowRightIcon, ChevronDownIcon, ChevronRightIcon, ChevronUpIcon } from "@chakra-ui/icons";
 
-export default function DropdownComponent() {
+export default function DropDownSubMenu() {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [arrowUp, setArrowUp] = useState(false);

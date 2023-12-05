@@ -30,27 +30,29 @@ const Navbar = () => {
         />
       </Link>
 
-      <ul onClick={scrollToTop}
-      className=" p- hidden flex-1 space-x-11 list-none items-center justify-end lg:flex ">
-        
-            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
-                <NavLink to='/'>Home</NavLink> 
-            </li>
-            
-            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500"><NavLink to='about'>About Us</NavLink>
-            </li>
+      <ul
+        onClick={scrollToTop}
+        className=" p- hidden flex-1 list-none items-center justify-end space-x-11 lg:flex "
+      >
+        <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+          <NavLink to="/">Home</NavLink>
+        </li>
 
-            <li className=" relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
-                <DropdownComponent/>
-            </li>
+        <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+          <NavLink to="about">About Us</NavLink>
+        </li>
 
-            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
-                <NavLink to='contact'>Contact</NavLink>
-            </li>
-            
-            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
-                <NavLink to='blogs'>Blogs</NavLink>
-            </li>
+        <li className=" relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+          <DropdownComponent />
+        </li>
+
+        <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+          <NavLink to="contact">Contact</NavLink>
+        </li>
+
+        <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+          <NavLink to="blogs">Blogs</NavLink>
+        </li>
       </ul>
 
       <div className="flex flex-1 items-center justify-end lg:hidden ">
@@ -65,10 +67,12 @@ const Navbar = () => {
           className={`${
             toggle ? "flex" : "hidden"
           } absolute right-0 top-20 w-full animate-fade-right  bg-dimBlack   p-6 animate-once animate-ease-linear`}
+          onClick={() => setToggle(false)}
         >
           <ul className=" flex flex-1 list-none  flex-col items-center justify-end ">
             {navLinks.map((link) => (
               <li
+                onClick={scrollToTop}
                 key={link.id}
                 className={`cursor-pointer  font-poppins text-[16px] font-normal text-white hover:text-green-500 
                         ${link.id === navLinks.length - 1 ? "mr-0" : "mb-10"}`}

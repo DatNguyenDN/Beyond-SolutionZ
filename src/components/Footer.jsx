@@ -111,15 +111,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w=[60%] col-span-2 justify-center space-y-4 bg-gray-500  p-5 text-white   max-md:w-[780px] max-md:py-5 max-sm:w-[500px] xl:right-5 xl:w-[700px]">
+        <div className="w=[60%] col-span-2 justify-center space-y-4 rounded-xl bg-gray-500  p-5 text-white   max-md:w-[780px] max-md:py-5 max-sm:w-[500px] xl:right-5 xl:w-[700px]">
           <h1 className="text-2xl">Subscribe</h1>
           <h2 className="text-lg">Join Our Mailing List & to get our news.</h2>
           <div className="">
             <input
-              className="h-[50px] w-[70%]"
+              className="h-[50px] w-[70%] rounded-l-xl"
               placeholder="Your email address..."
             ></input>
-            <button className=" h-[50px] w-[30%] bg-blue-400 text-white">
+            <button className=" h-[50px] w-[30%] rounded-r-xl bg-blue-400 text-white">
               Subscribe
             </button>
           </div>

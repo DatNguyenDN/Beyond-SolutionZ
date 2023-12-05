@@ -62,7 +62,7 @@ const Services = () => {
                 </div>
             </section>
 
-            <div className=" flex flex-row justify-evenly items-center  h-[100px] bg-lime-100  gap-3 px-3 md:h-[200px] ">
+        <div className=" flex flex-row justify-evenly items-center  h-[100px] bg-[#157a704d]  gap-3 px-3 md:h-[200px] ">
                 <img
                     src={brand1}
                     alt="brand1"
