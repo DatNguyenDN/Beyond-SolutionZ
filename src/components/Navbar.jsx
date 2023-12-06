@@ -9,10 +9,10 @@ import DropDownSubMenu from "./DropDownMenu/DropDownSubMenu";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  
-const handleClick = () => {
-  setToggle(false)
-}
+
+  const handleClick = () => {
+    setToggle(false);
+  };
 
   return (
     <nav
@@ -30,10 +30,7 @@ const handleClick = () => {
         />
       </Link>
 
-      <ul
-       
-        className=" p- hidden flex-1 list-none items-center justify-end space-x-11 lg:flex "
-      >
+      <ul className=" p- hidden flex-1 list-none items-center justify-end space-x-11 lg:flex ">
         <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
           <a href="/">Home</a>
         </li>
@@ -66,16 +63,11 @@ const handleClick = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } absolute right-0 top-20 w-full  bg-dimBlack  animate__animated animate__backInLeft `}
+          } animate__animated animate__fadeInRight absolute right-0  top-20  w-full bg-dimBlack `}
           onClick={() => setToggle(true)}
-          
         >
-        
-
-          <ul
-          className="relative flex w-full flex-1 cursor-pointer list-none flex-col items-center justify-end gap-10 text-white  ">
-            <li  
-             className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+          <ul className="relative flex w-full flex-1 cursor-pointer list-none flex-col items-center justify-end gap-10 text-white  ">
+            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
               <a href="/">Home</a>
             </li>
 
@@ -83,14 +75,14 @@ const handleClick = () => {
               <a href="/about">About</a>
             </li>
 
-            <li className="relative left-[-70px] "  >
-              <DropDownSubMenu   />
+            <li className="relative left-[-70px] ">
+              <DropDownSubMenu />
             </li>
             <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
               <a href="/contact">Contact</a>
             </li>
 
-            <li  className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
+            <li className="navlink  relative cursor-pointer p-1 font-poppins  text-[16px] font-normal hover:text-green-500">
               <a href="/blogs">Blogs</a>
             </li>
           </ul>
